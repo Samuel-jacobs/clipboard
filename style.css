@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC&family=Bai+Jamjuree');
+:root {
+	--strong-cyan: hsl(171, 66%, 44%);
+	--light-blue: hsl(233, 100%, 69%);
+	--dark-grayish-blue: hsl(210, 10%, 33%);
+	--grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	font-family: 'Bai Jamjuree', sans-serif;
+}
+p {
+	color: var(--grayish-blue);
+	
+}
+h1, h2, h3 {
+	color: var(--dark-grayish-blue);
+	font-weight: 800;
+}
+.banner-btns {
+	padding-top: 20px;
+}
+.banner-btns .btn1{
+	background-color: var(--strong-cyan);
+	border: none;
+	color: white;
+	border-radius: 30px;	
+}
+.banner-btns .btn2 {
+	background-color: var(--light-blue);
+	border: none;
+	color: white;
+	border-radius: 30px;
+}
+button:hover {
+	filter: brightness(150%);
+}
+
+.intro {
+	text-align: center;
+}
+.wrapper img {
+	width: 100%;
+	height: auto;
+}
+
+#access img {
+	height: auto;
+	width: 100%;
+	padding-top: 30px;
+}
+
+#supercharge {
+	padding: 50px 30px;
+}
+.supercharge-item {
+	text-align: center;
+}
+
+#footer {
+	background-color: hsl(0, 0%, 94%);
+}
+.footer-content img {
+	width: 80px;
+	height: 80px;
+}
+.attribution {
+	padding-top: 30px;
+}
+.footer-socials {
+	padding-top: 30px;
+}
+
+.footer-socials a {
+	padding: 10px;
+	color: var(--dark-grayish-blue);
+	font-size: 20px;
+}
+.footer-links a:hover {
+	color: var(--strong-cyan);
+}
+.footer-socials a:hover {
+	color: var(--strong-cyan);
+}
+@media screen and (max-width: 768px) {
+	#banner {
+		background-image: url('images/bg-header-mobile.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		padding: 100px 20px;
+	}
+	
+	.banner-btns .btn1 {
+		margin-bottom: 20px;	
+		width: 80%;
+		padding: 15px;
+	}
+	.banner-btns .btn2 {
+		width: 80%;
+		padding: 15px;
+	}
+
+	#keep-track {
+		padding: 50px 30px;
+		text-align: center;
+	}
+	.wrapper-image {
+		padding-top: 50px;
+	}
+	.wrapper-item {
+		padding-top: 20px;
+	}
+	
+
+	#access {
+		padding: 50px 30px;
+	}
+
+	.supercharge-item {
+		padding-top: 30px;
+	}
+
+	#logo {
+		padding: 50px 30px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	#logo img {
+		object-fit: fill;
+		height: auto;
+		width: 30%;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 50px;
+	}
+
+	#cta {
+		text-align: center;
+		padding: 50px 30px;
+	}
+
+
+	#footer {
+		padding: 50px 30px 30px 30px;
+		text-align: center;
+	}
+	.footer-links a{
+		display: block;
+		padding-top: 30px;
+		color: var(--dark-grayish-blue);
+		text-decoration: none;
+	}
+}
+@media screen and (min-width: 768px) {
+	#banner {
+		background-image: url('images/bg-header-desktop.png');
+		background-repeat: no-repeat;
+		text-align: center;
+		padding: 100px 0 50px 0;
+	}
+
+	#banner h1 {
+		font-size: xx-large;
+	}
+	#banner p {
+		width: 40%;
+		margin: 0 auto;
+	}
+	.btn1, .btn2 {
+		padding: 15px 30px;
+	}
+
+
+	#keep-track {
+		padding: 50px 0;
+	}
+	.intro {
+		width: 40%;
+		margin: 0 auto;
+	}
+	.wrapper {
+		display: flex;
+		padding-top: 50px;
+	}
+	.wrapper-image {
+		width: 50%;
+	}
+	.wrapper-content {
+		width: 50%;
+		padding-left: 80px;
+	}
+	.wrapper-item {
+		width: 55%;
+		padding-top: 10px;
+		padding-bottom: 0;
+	}
+	.wrapper-item h3 {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.wrapper-item p {
+		padding-top: 10px;
+		margin-top: 0;
+	}
+
+	.access-image {
+		width: 50%;
+		margin: 0 auto;
+	}
+
+	#supercharge {
+		padding: 0 100px 50px 100px;
+	}
+	.supercharge-wrapper {
+		display: flex;
+		justify-content: space-evenly;
+		padding-top: 50px;
+	}
+	.supercharge-item {
+		padding: 0 10px;
+	}
+
+	#logo {
+		display: flex;
+		justify-content: center;
+		padding: 50px;
+	}
+	#logo img {
+		padding: 0 30px;
+	}
+
+	#cta {
+		text-align: center;
+		padding: 50px 0;
+	}
+	#cta p {
+		width: 45%;
+		margin: 0 auto;
+	}
+
+	#footer {
+		padding: 50px 100px 30px 100px;
+	}
+	.footer-wrapper {
+		display: flex;
+	}
+	.footer-content {
+		display: flex;
+		width: 70%;
+	}
+	.footer-links {
+		justify-self: right;
+		margin: 0 auto;
+	}
+	.footer-links a {
+		display: block;
+		text-decoration: none;
+		padding-bottom: 20px;
+		color: var(--dark-grayish-blue);
+	}
+	
+	.footer-socials {
+		margin: 0 auto;
+	}
+	
+	
+}
